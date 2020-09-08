@@ -11,6 +11,8 @@ import TableHead from "@material-ui/core/TableHead";
 import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 
+import AddInspection from "./components/addInspection/index";
+
 const columns = [
   { id: "model", label: "Modelo", minWidth: 150 },
   { id: "year", label: "Ano", minWidth: 150 },
@@ -91,7 +93,7 @@ export default () => {
 
   return (
     <div className={classes.dashboard}>
-      <Button
+      {/* <Button
         variant="contained"
         color="primary"
         size="large"
@@ -99,7 +101,10 @@ export default () => {
         startIcon={<AddIcon />}
       >
         Nova vistoria
-      </Button>
+      </Button> */}
+
+      <AddInspection />
+      
       <Paper className={classes.root}>
         <TableContainer className={classes.container}>
           <Table stickyHeader aria-label="sticky table">
