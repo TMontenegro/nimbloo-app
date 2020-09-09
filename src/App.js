@@ -8,9 +8,11 @@ import Authenticate from './loggedIn/pages/Authenticate/index';
 import Dashboard from './loggedIn/pages/Dashboard/components/addInspection/index';
 import Inspection from './loggedIn/pages/Inspection/index';
 
+import './main.css'
+
 export default () => {
   return (
-    <div>
+    <div className="app">
       <BrowserRouter>
         <Switch>
           <Route path='/' exact component={Authenticate} />

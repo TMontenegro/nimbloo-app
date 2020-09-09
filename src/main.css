@@ -1,0 +1,20 @@
+body {
+    background-color: #eeeeee;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+}
+.authentication {
+    height: 630px;
+    width: 535px;
+}
+
+.panel {
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
